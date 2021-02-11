@@ -1,4 +1,4 @@
-from echoslam_ROS.msg import Bot
+from echoslam_ros.msg import Bot
 # from echoslam.msg import Bot
 import rospkg
 import rospy

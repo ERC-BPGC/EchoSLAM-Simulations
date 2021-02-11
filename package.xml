@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>echoslam_ROS</name>
+  <name>echoslam_ros</name>
   <version>0.0.0</version>
   <description>The echoslam package</description>
 

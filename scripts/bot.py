@@ -8,8 +8,8 @@
 """
 
 
-from echoslam_ROS.msg import Bot #28/08/2020 : Aditya changed echoslam to echoslam_ROS in this line.
-from echoslam_ROS.srv import *
+from echoslam_ros.msg import Bot #28/08/2020 : Aditya changed echoslam to echoslam_ROS in this line.
+from echoslam_ros.srv import *
 from std_msgs.msg import Int32
 import sys
 import rospkg

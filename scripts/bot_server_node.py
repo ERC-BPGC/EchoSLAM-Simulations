@@ -6,11 +6,11 @@ from math import sqrt
 
 import rospkg
 import rospy
-from echoslam_ROS.srv import BotService, BotServiceResponse
+from echoslam_ros.srv import BotService, BotServiceResponse
 
 
 rospack = rospkg.RosPack()
-path = rospack.get_path("echoslam_ROS")
+path = rospack.get_path("echoslam_ros")
 sys.path.append(path)
 from src.robot import Robot
 

@@ -7,14 +7,14 @@
    <param name="radius" value="0.5" />
    <node 
    		name="bot_server_node" 
-   		pkg="echoslam_ROS" 
+   		pkg="echoslam_ros" 
    		type="bot_server_node.py" 
    		if="$(eval arg('dummy') == arg('teamsize'))"
    		output="screen"
    /> 
    <node 
       name="plotter_node" 
-      pkg="echoslam_ROS" 
+      pkg="echoslam_ros" 
       type="plotter_node.py" 
       if="$(eval arg('dummy') == arg('teamsize'))"
       output="screen"
@@ -23,7 +23,7 @@
    <group ns="$(eval 'bot' + str(arg('dummy')))">  
       <node
         name="$(eval 'bot' + str(arg('dummy')))"
-        pkg="echoslam_ROS" type="bot.py"
+        pkg="echoslam_ros" type="bot.py"
         output="screen"
       />
       <param
@@ -34,7 +34,7 @@
    </group>
 
    <!-- recursively start new node -->
-   <include file="$(find echoslam_ROS)/launch/team.launch" if="$(eval arg('dummy') - 1 > 0)">
+   <include file="$(find echoslam_ros)/launch/team.launch" if="$(eval arg('dummy') - 1 > 0)">
        <arg name="dummy" value="$(eval arg('dummy') - 1)"/>
        <arg name="teamsize" value="$(eval arg('teamsize'))" />
    </include>

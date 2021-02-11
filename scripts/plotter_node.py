@@ -3,7 +3,7 @@
 import rospy 
 import matplotlib.pyplot as plt 
 import matplotlib.animation as animation
-from echoslam_ROS.msg import Bot 
+from echoslam_ros.msg import Bot 
 
 rospy.init_node("plotter_node")
 bots = rospy.get_param("/size")
